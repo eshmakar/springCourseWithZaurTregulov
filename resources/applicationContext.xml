@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!--даем название для объекта-->
+  <bean id="myPet"
+        class="spring_intro.Cat">
+  </bean>
+
+  <!--помещаем этот бин в Person-->
+  <bean id="myPerson"
+        class="spring_intro.Person">
+<!--    <constructor-arg ref="myPet"/>-->  <!--используем конструктор для добавления элемента Cat в Person-->
+    <property name="pet" ref="myPet"/> <!--используем setter вместо конструктора-->
+  </bean>
+
+</beans>
