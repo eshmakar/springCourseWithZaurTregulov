@@ -15,6 +15,10 @@
         class="spring_intro.Person">
 <!--    <constructor-arg ref="myPet"/>-->  <!--используем конструктор для добавления элемента Cat в Person-->
     <property name="pet" ref="myPet"/> <!--используем setter вместо конструктора-->
+
+    <property name="surName" value="Ivanov"/>
+    <!--установливаем значения для setter-->
+    <property name="age" value="34"/>
   </bean>
 
 </beans>
