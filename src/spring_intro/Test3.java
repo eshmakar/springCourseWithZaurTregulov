@@ -7,8 +7,8 @@ public class Test3 {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");//чтение конфигурационного файла
         Person person = context.getBean("myPerson", Person.class);//получение бинов
         person.callYourPet();//вызов методов
-        System.out.println(person.getSurName());
-        System.out.println(person.getAge());
+//        System.out.println(person.getSurName());
+//        System.out.println(person.getAge());
         context.close();
 
     }
